@@ -17,7 +17,6 @@ async function register(userData){
     }
     const user = new User(userData);
     await user.save();
-    //await user.generateAuthToken();   
     
     return user;
 }
